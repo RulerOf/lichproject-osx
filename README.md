@@ -1,5 +1,28 @@
+# Lichproject on High Sierra
 
-Update Homebrew and install `rbenv` and the supporting tools we need:
+## Overview
+
+This repo is intended to act as a convenient package and easy-to-use installer for the lichproject proxy used with several play.net games.
+
+Follow the instructions below to get the software working on your computer.
+
+## Requirements
+
+- [Homebrew](https://brew.sh/)
+- Wine. I suggest following [this guide](https://www.davidbaumgold.com/tutorials/wine-mac/#part-2:-install-xquartz-using-homebrew), parts 1-3.
+
+## Usage
+
+### Install Lich
+
+Clone this repo to your machine and then change to that directory:
+
+```bash
+git clone https://github.com/RulerOf/lichproject-osx.git ~/lich
+cd ~/lich
+```
+
+Update Homebrew, then install `rbenv` and the supporting tools we need:
 
 ```bash
 brew update
@@ -34,8 +57,28 @@ rbenv bundler on
 bundler install
 ```
 
+### Install Simutronics Launcher
+
+Download the executable:
+
+```bash
+wget http://www.play.net/software/lnchInst.exe
+```
+
+Run it with wine:
+
+```bash
+wine lnchInst.exe
+```
+
+Click through that installation.
+
+### Running Lich
+
 Now run lich:
 
 ```bash
 ruby lich.rbw
 ```
+
+Enter your username and password into the lich settings, connect, choose your launcher, and run the game. Your system will download and run either the StormFront or Wizard Front End, and it will run under wine.
