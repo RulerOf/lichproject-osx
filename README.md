@@ -9,7 +9,7 @@ Follow the instructions below to get the software working on your computer.
 ## Requirements
 
 - [Homebrew](https://brew.sh/)
-- Wine. I suggest following [this guide](https://www.davidbaumgold.com/tutorials/wine-mac/#part-2:-install-xquartz-using-homebrew), parts 1-3.
+- Wine. I suggest following [this guide](https://www.davidbaumgold.com/tutorials/wine-mac/#part-1:-install-homebrew), parts 1-3.
 
 ## Usage
 
