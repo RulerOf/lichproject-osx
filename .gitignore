@@ -1,2 +1,9 @@
 Gemfile.lock
 .rbenv-gemsets
+backup/
+data*/*
+!data/gameobj-data.xml
+!data/spell-list.xml
+logs/
+maps/
+temp/
