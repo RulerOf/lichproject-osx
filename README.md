@@ -34,7 +34,12 @@ Initialize `rbenv` and integrate it with your shell:
 
 ```bash
 rbenv init -
-printf '# Initialize rbenv\neval "$(rbenv init -)"\n' >> ~/.bash_profile
+if [[ "$SHELL" = *"bash"* ]]; then
+  shellInitFile=~/.bash_profile
+elif [[ "$SHELL" = *"zsh"* ]]; then
+  shellInitFile=~/.zshrc
+fi
+printf '# Initialize rbenv\neval "$(rbenv init -)"\n' >> $shellInitFile
 ```
 
 Install the version of Ruby required by Lich:
