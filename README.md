@@ -40,7 +40,7 @@ brew cask install xquartz
 Initialize `rbenv` and integrate it with your shell:
 
 ```bash
-rbenv init -
+eval "$(rbenv init -)"
 if [[ "$SHELL" = *"bash"* ]]; then
   shellInitFile=~/.bash_profile
 elif [[ "$SHELL" = *"zsh"* ]]; then
