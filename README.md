@@ -59,7 +59,6 @@ Install bundler, enable `rbenv-bundler`, and then install the required gems:
 
 ```bash
 gem install bundler
-rbenv bundler on
 bundle install
 ```
 
