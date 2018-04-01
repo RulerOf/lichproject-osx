@@ -26,7 +26,15 @@ Update Homebrew, then install `rbenv` and the supporting tools we need:
 
 ```bash
 brew update
-brew install rbenv ruby-build rbenv-gemset rbenv-bundler
+brew install rbenv ruby-build rbenv-gemset
+```
+
+Install Cairo and xQuartz:
+
+```bash
+brew install --with-x11 cairo
+brew tap Caskroom/cask
+brew cask install xquartz
 ```
 
 Initialize `rbenv` and integrate it with your shell:
@@ -44,13 +52,7 @@ printf '# Initialize rbenv\neval "$(rbenv init -)"\n' >> $shellInitFile
 Install the version of Ruby required by Lich:
 
 ```bash
-rbenv install -v 2.2.5
-```
-
-Create a Gemset that we can use with Lich:
-
-```bash
-rbenv gemset init lichproject
+rbenv install -s
 ```
 
 Install bundler, enable `rbenv-bundler`, and then install the required gems:
@@ -58,7 +60,7 @@ Install bundler, enable `rbenv-bundler`, and then install the required gems:
 ```bash
 gem install bundler
 rbenv bundler on
-bundler install
+bundle install
 ```
 
 ### Install Simutronics Launcher
