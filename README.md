@@ -30,7 +30,6 @@ brew install rbenv ruby-build rbenv-gemset rbenv-bundler
 ```
 
 Initialize `rbenv` and integrate it with your shell:
-  - Supports zsh and bash. If you don't know what this is, then don't worry about it.
 
 ```bash
 rbenv init -
