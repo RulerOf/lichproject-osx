@@ -68,7 +68,7 @@ bundle install
 Download the executable:
 
 ```bash
-wget http://www.play.net/software/lnchInst.exe
+curl -OL http://www.play.net/software/lnchInst.exe
 ```
 
 Run it with wine:
