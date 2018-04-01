@@ -7,3 +7,17 @@ data*/*
 logs/
 maps/
 temp/
+.DS_Store
+# Ignore the extra scripts I've downloaded to my personal installation, whitelist the stock ones
+scripts/*
+!scripts/alias.lic
+!scripts/repository.lic
+!scripts/lnet.lic
+!scripts/infomon.lic
+!scripts/vars.lic
+!scripts/narost.lic
+!scripts/go2.lic
+!scripts/favs.lic
+!scripts/mapmap.lic
+!scripts/autostart.lic
+!scripts/settings.lic
