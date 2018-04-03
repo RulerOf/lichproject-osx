@@ -55,7 +55,7 @@ Install the version of Ruby required by Lich:
 rbenv install -s
 ```
 
-Install bundler, enable `rbenv-bundler`, and then install the required gems:
+Install bundler, and then install the required gems:
 
 ```bash
 gem install bundler
