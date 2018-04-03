@@ -37,6 +37,13 @@ brew tap Caskroom/cask
 brew cask install xquartz
 ```
 
+Install and pin the version of gtk+ that is required by Lich:
+
+```bash
+brew install https://raw.githubusercontent.com/Homebrew/homebrew/bb3fe5f2de87f76bc0a3f3480635c8fd0d68cec3/Library/Formula/gtk+.rb
+brew pin gtk+
+```
+
 Initialize `rbenv` and integrate it with your shell:
 
 ```bash
