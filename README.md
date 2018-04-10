@@ -1,7 +1,5 @@
 # Lichproject on High Sierra
 
-## Overview
-
 This repo is intended to act as a convenient package and easy-to-use installation guide for the lichproject proxy used with several play.net games.
 
 Follow the instructions below to get the software working on your computer.
